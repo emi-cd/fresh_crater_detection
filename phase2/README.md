@@ -4,7 +4,7 @@ Phase1で集めた新しいクレーターで学習させて，物体検出で�
 # Usage
 ## YOLOv4の準備
 [YOLOv4のコード](https://github.com/AlexeyAB/darknet)をクローンする．2021年2月現在も開発が進んでいるため，基本的にAlexeyさんが書いてある通りに進めてほしい．
-参考までに本研究で用いたcfgファイルや学習後のbest weightなどをtask下に置く．
+参考までに本研究で用いたcfgファイルなどをtask下に置く．
 
 
 ## データの下準備
