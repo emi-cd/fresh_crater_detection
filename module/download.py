@@ -45,7 +45,7 @@ def get_data_from_point(point):
 	data : dataframe
 		Information of the nac that contain the point.
 	'''
-	cmd = '/opt/JAXA/bin/list_lroc_nac_urls --database /opt/JAXA/db/lroc_nac_cdr_archive_index_1034.bin -p -- {} {}'.format(point[0], point[1])
+	cmd = 'PATH/TO/TOOL --database PATH/TO/DB -p -- {} {}'.format(point[0], point[1])
 	data = get_data(cmd.split(' '))
 	data['RESOLUTION'] = data['RESOLUTION'].astype(float)
 	data['EMMISSION_ANGLE'] = data['EMMISSION_ANGLE'].astype(float)
@@ -74,7 +74,7 @@ def get_data_from_point_rectangle(point, r_lat, r_lon):
 	data : dataframe
 		Information of the nac that contain the point.
 	'''
-	cmd = '/opt/JAXA/bin/list_lroc_nac_urls --database /opt/JAXA/db/lroc_nac_cdr_archive_index_1034.bin -r -- {} {} {} {}'.format(point[1]-r_lon, point[1]+r_lon, point[0]-r_lat, point[0]+r_lat)
+	cmd = 'PATH/TO/TOOL --database PATH/TO/DB -r -- {} {} {} {}'.format(point[1]-r_lon, point[1]+r_lon, point[0]-r_lat, point[0]+r_lat)
 	data = get_data(cmd.split(' '))
 	data['RESOLUTION'] = data['RESOLUTION'].astype(float)
 	data['EMMISSION_ANGLE'] = data['EMMISSION_ANGLE'].astype(float)
