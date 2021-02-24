@@ -8,5 +8,6 @@ pip install -r requirements.txt
 ```
 
 ## 環境設定
+* moduleをPYTHONPATHに加える
 * module下のconst.py中のそれぞれへのPATHを設定する
 * module下のdownload.pyにNAC検索ツールへのPATHとデータベースを設定する(48,77行目)
